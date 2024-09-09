@@ -6,7 +6,6 @@ namespace AyraaCollections.Data
 {
     public class User
     {
-
             public Guid Id { get; set; }
             public string Email { get; set; }
             public string FirstName { get; set; }
@@ -17,7 +16,6 @@ namespace AyraaCollections.Data
 
         public User(UserDTO user)
         {
-            Id = Guid.NewGuid();
             Email = user.Email;
             FirstName = user.FirstName;
             LastName = user.LastName;

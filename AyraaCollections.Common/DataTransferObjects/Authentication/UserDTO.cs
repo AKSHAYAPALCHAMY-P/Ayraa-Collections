@@ -2,7 +2,6 @@
 
 namespace AyraaCollections.Common
 {
-
     public class UserDTO
     {
         public Guid Id { get; set; }
@@ -12,7 +11,4 @@ namespace AyraaCollections.Common
         public string Password {  get; set; }
         public string ConfirmPassword {  get; set; }     
     }
-
 }
-
-

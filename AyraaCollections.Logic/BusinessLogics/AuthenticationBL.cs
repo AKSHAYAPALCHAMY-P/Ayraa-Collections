@@ -6,6 +6,12 @@ public class AuthenticationBL
 {
     public bool Register(UserDTO dtoUser)
     {
+        var ExistingUser = AyraaCollectionsContext.Users.Exists(u => u.Email == dtoUser.Email);
+
+        if(ExistingUser) 
+        {
+            return false;
+        }
 
         User user = new User(dtoUser);
         AyraaCollectionsContext.Users.Add(user);
