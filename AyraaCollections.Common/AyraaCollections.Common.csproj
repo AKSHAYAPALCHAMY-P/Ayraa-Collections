@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	
   <PropertyGroup>
     <TargetFramework>net4.7</TargetFramework>
   </PropertyGroup>
+	
   <ItemGroup>
     <Compile Remove="Facades\**" />
     <Compile Remove="TableObjects\**" />
@@ -10,4 +12,5 @@
     <None Remove="Facades\**" />
     <None Remove="TableObjects\**" />
   </ItemGroup>
+	
 </Project>

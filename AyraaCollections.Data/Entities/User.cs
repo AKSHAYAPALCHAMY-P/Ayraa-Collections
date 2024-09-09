@@ -12,8 +12,6 @@ namespace AyraaCollections.Data
             public string LastName { get; set; }
             public string Password { get; set; }
 
-            public User() { }
-
         public User(UserDTO user)
         {
             Email = user.Email;
