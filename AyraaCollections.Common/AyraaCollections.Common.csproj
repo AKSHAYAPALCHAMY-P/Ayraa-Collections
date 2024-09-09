@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Facades\" />
-    <Folder Include="TableObjects\" />
+    <Compile Remove="Facades\**" />
+    <Compile Remove="TableObjects\**" />
+    <EmbeddedResource Remove="Facades\**" />
+    <EmbeddedResource Remove="TableObjects\**" />
+    <None Remove="Facades\**" />
+    <None Remove="TableObjects\**" />
   </ItemGroup>
 
 </Project>

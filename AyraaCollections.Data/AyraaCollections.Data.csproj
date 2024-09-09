@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Database\" />
-    <Folder Include="TableObjects\" />
+    <Compile Remove="Database\**" />
+    <Compile Remove="TableObjects\**" />
+    <EmbeddedResource Remove="Database\**" />
+    <EmbeddedResource Remove="TableObjects\**" />
+    <None Remove="Database\**" />
+    <None Remove="TableObjects\**" />
   </ItemGroup>
 
 </Project>

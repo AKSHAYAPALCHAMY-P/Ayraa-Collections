@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="FacadeImplemantation\**" />
+    <EmbeddedResource Remove="FacadeImplemantation\**" />
+    <None Remove="FacadeImplemantation\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="BusinessLogics\" />
-    <Folder Include="FacadeImplemantation\" />
   </ItemGroup>
 
 </Project>
