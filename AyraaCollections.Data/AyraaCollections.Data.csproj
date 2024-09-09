@@ -1,7 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
   <PropertyGroup>
     <TargetFramework>net4.7</TargetFramework>
   </PropertyGroup>
-
+	
+  <ItemGroup>
+    <Compile Remove="Database\**" />
+    <Compile Remove="TableObjects\**" />
+    <EmbeddedResource Remove="Database\**" />
+    <EmbeddedResource Remove="TableObjects\**" />
+    <None Remove="Database\**" />
+    <None Remove="TableObjects\**" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\AyraaCollections.Common\AyraaCollections.Common.csproj" />
+  </ItemGroup>
+	
 </Project>

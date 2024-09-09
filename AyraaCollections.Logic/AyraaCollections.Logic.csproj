@@ -1,7 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net4.7</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FacadeImplemantation\**" />
+    <EmbeddedResource Remove="FacadeImplemantation\**" />
+    <None Remove="FacadeImplemantation\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BusinessLogics\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AyraaCollections.Common\AyraaCollections.Common.csproj" />
+    <ProjectReference Include="..\AyraaCollections.Data\AyraaCollections.Data.csproj" />
+  </ItemGroup>
 
 </Project>
