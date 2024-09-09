@@ -14,4 +14,9 @@
     <Folder Include="BusinessLogics\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AyraaCollections.Common\AyraaCollections.Common.csproj" />
+    <ProjectReference Include="..\AyraaCollections.Data\AyraaCollections.Data.csproj" />
+  </ItemGroup>
+
 </Project>

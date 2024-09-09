@@ -13,4 +13,8 @@
     <None Remove="TableObjects\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AyraaCollections.Common\AyraaCollections.Common.csproj" />
+  </ItemGroup>
+
 </Project>

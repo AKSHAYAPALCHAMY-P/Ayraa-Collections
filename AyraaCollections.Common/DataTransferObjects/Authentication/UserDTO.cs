@@ -5,15 +5,12 @@ namespace AyraaCollections.Common
 
     public class UserDTO
     {
-        public Guid nId { get; set; }
-        public string strEmail { get; set; }
-        public string strFirstName {  get; set; }
-        public string strLastName { get; set; }
-        public string strPassword {  get; set; }
-        public string strConfirmPassword {  get; set; }
-
-        public UserDTO(UserType userType) { }
-     
+        public Guid Id { get; set; }
+        public string Email { get; set; }
+        public string FirstName {  get; set; }
+        public string LastName { get; set; }
+        public string Password {  get; set; }
+        public string ConfirmPassword {  get; set; }     
     }
 
 }

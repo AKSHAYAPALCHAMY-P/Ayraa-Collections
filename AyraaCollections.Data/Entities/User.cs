@@ -1,27 +1,37 @@
 ﻿using System;
+using System.Configuration;
 using AyraaCollections.Common;
 
 namespace AyraaCollections.Data
 {
     public class User
     {
-            public Guid nId { get; set; }
-            public string strEmail { get; set; }
-            public string strFirstName { get; set; }
-            public string strLastName { get; set; }
-            public string strPassword { get; set; }
-            public string strConfirmPassword { get; set; }
+
+            public Guid Id { get; set; }
+            public string Email { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string Password { get; set; }
 
             public User() { }
 
-            public User(UserDTO user) 
+        public User(UserDTO user)
+        {
+            Id = Guid.NewGuid();
+            Email = user.Email;
+            FirstName = user.FirstName;
+            LastName = user.LastName;
+            Password = user.Password;
+        }
+
+        public UserDTO GetUserDTO()
+        {
+            return new UserDTO()
             {
-            nId = Guid.NewGuid();
-            strEmail = user.strEmail;
-            strFirstName = user.strFirstName;
-            strLastName = user.strLastName;
-            strPassword = user.strPassword;
-            strConfirmPassword = user.strConfirmPassword;
-            }
+                Email = this.Email,
+                FirstName = this.FirstName,
+                LastName = this.LastName
+            };
+        }
     }
 }

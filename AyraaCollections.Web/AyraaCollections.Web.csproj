@@ -173,6 +173,10 @@
       <Project>{c3cf4f5a-f454-435e-845c-86b7bc47f3f1}</Project>
       <Name>AyraaCollections.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AyraaCollections.Logic\AyraaCollections.Logic.csproj">
+      <Project>{db3190e0-a5cf-4810-896d-17bae8badf20}</Project>
+      <Name>AyraaCollections.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
